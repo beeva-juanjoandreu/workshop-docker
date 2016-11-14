@@ -6,10 +6,10 @@ MAINTAINER genDevOps
 RUN rm -rf /etc/nginx/sites-enabled
 
 # Add config
-ADD config/nginx.conf /etc/config/nginx.conf
+ADD config/nginx.conf /etc/nginx/nginx.conf
 
 # Add ssl certs
-ADD ssl/ /etc/nginx/ssl
+ADD ssl/ /etc/nginx/ssl/
 
 # Ports
 EXPOSE 443
